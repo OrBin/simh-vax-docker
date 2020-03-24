@@ -1,0 +1,6 @@
+*.dsk
+*.img
+*.iso
+src/BIN
+bin/vax
+data/ka655x.bin
