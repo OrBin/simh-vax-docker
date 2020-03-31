@@ -12,7 +12,6 @@ services:
     volumes:
       - ./data/d0.dsk:/usr/local/vax/data/d0.dsk
       #- ./data/OpenVMS_VAX_7.3.img:/usr/local/vax/data/OpenVMS_VAX_7.3.img:ro
-      - ./data/ka655x.bin:/usr/local/vax/data/ka655x.bin:ro
       - ./bin/vax.ini:/usr/local/vax/bin/vax.ini:ro
     working_dir: /usr/local/vax/bin
     command: sleep infinity #./vax

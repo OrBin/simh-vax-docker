@@ -9,6 +9,7 @@ RUN mkdir -p /usr/local/vax/bin /usr/local/vax/data \
     && make vax \
     && cd .. \
     && cp src/BIN/vax bin/vax \
+    && cp src/VAX/ka655x.bin data/ka655x.bin \
     && rm -rf src/
 
 COPY data/ /usr/local/vax/data/
