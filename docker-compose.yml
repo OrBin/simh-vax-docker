@@ -11,10 +11,7 @@ services:
       - NET_RAW
     volumes:
       - ./data/d0.dsk:/usr/local/vax/data/d0.dsk
-      - ./data/d1.dsk:/usr/local/vax/data/d1.dsk
-      - ./data/d2.dsk:/usr/local/vax/data/d2.dsk
       #- ./data/OpenVMS_VAX_7.3.img:/usr/local/vax/data/OpenVMS_VAX_7.3.img:ro
-      #- ./data/cd.iso:/usr/local/vax/data/cd.iso:ro
       - ./data/ka655x.bin:/usr/local/vax/data/ka655x.bin:ro
       - ./bin/vax.ini:/usr/local/vax/bin/vax.ini:ro
     working_dir: /usr/local/vax/bin
