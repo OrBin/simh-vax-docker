@@ -1,20 +1,16 @@
-# Getting Started
+# Prerequisites
+1. You'll need `docker-compose`. Install it with `pip install docker-compose`.
 
-**Note**: `sudo` is ommited in this document.
+2. Enable running docker without sudo:
+```sudo usermod -aG docker $USER```
 
-1. You will need to install docker an `docker-compose`. 
+3. Copy `d0.dsk` into the `data` directory. You will need to obtain separately the disk images containing OpenVMS.
 
-    pip install docker-compose
-   
-2. Copy `d0.dsk`, `d1.dsk` and `d2.dsk` into the `data` directory. You will need to obtain separately the disk images containing OpenVMS.
-
-3. Pull the docker image
-
-    docker pull orbin/simh-vax
 
 # Running
-
-    ./run_simh_container.sh
+```bash
+./run_simh_container.sh
+```
 
 ### Starting TCP/IP
 
@@ -26,3 +22,7 @@ And then check that it can send packets outside the container:
 
     tcpip ping 8.8.8.8
 
+# Building
+```bash
+./build.sh
+```
